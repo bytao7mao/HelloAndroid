@@ -6,20 +6,42 @@
     android:layout_height="match_parent"
     tools:context="com.example.tao.helloandroid.MainActivity">
 
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/accent">-->
+
+    <!--</ImageView>-->
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="140dp"
-        android:alpha="0.7"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/y"
+        android:id="@+id/pika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginStart="129dp"
+        android:alpha="1"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pika2" />
+
+    <ImageView
+        android:id="@+id/pokeshop"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="false"
+        android:alpha="1"
+        android:cropToPadding="false"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/pokeshop" />
+
 
 
     <TextView
-        android:id="@+id/txt1"
+        android:id="@+id/brandId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -27,16 +49,16 @@
         android:fontFamily="monospace"
         android:gravity="center"
         android:padding="5dp"
-        android:text="@string/link1"
+        android:text="@string/brand"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
-        android:layout_above="@+id/txt2"
+        android:layout_above="@+id/phoneId"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:id="@+id/txt2"
+        android:id="@+id/phoneId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -44,17 +66,17 @@
         android:fontFamily="monospace"
         android:gravity="center"
         android:padding="5dp"
-        android:autoLink="all"
-        android:text="@string/link2"
+        android:autoLink="phone"
+        android:text="@string/phone"
         android:linksClickable="true"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
-        android:layout_above="@+id/txt3"
+        android:layout_above="@+id/linkId"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:id="@+id/txt3"
+        android:id="@+id/linkId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -68,12 +90,12 @@
         android:textColor="@android:color/background_light"
         android:textColorLink="@android:color/white"
         android:textSize="24sp"
-        android:layout_above="@+id/txt4"
+        android:layout_above="@+id/streetId"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:id="@+id/txt4"
+        android:id="@+id/streetId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -81,7 +103,7 @@
         android:fontFamily="monospace"
         android:gravity="center"
         android:padding="5dp"
-        android:text="@string/link4"
+        android:text="@string/street"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
@@ -96,7 +118,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:background="@color/colorPrimary" />
+        android:background="@color/primary" />
 
 
 </RelativeLayout>

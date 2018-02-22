@@ -11,96 +11,107 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:alpha="0.7"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/y"
-        android:layout_alignBottom="@+id/txt3"
-        android:layout_alignParentStart="true" />
+        android:layout_above="@+id/branId"
+        android:layout_alignParentStart="true"
+        android:alpha="1"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/pkachu" />
+
+    <ImageView
+        android:id="@+id/pokeshop"
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:alpha="1"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pokeshop" />
 
 
     <TextView
-        android:id="@+id/txt1"
-        android:layout_width="wrap_content"
+        android:id="@+id/branId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/phoneId"
+        android:layout_alignParentStart="true"
         android:layout_gravity="center"
         android:background="@android:color/holo_orange_light"
         android:fontFamily="monospace"
         android:gravity="center"
         android:padding="5dp"
-        android:text="@string/link1"
+        android:text="@string/brand"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_above="@+id/txt2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/txt2"
-        android:layout_width="wrap_content"
+        android:id="@+id/phoneId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/linkId"
+        android:layout_alignParentStart="true"
         android:layout_gravity="center"
+        android:autoLink="phone"
         android:background="@android:color/holo_orange_light"
+        android:drawableLeft="@drawable/phone"
         android:fontFamily="monospace"
         android:gravity="center"
-        android:padding="5dp"
-        android:autoLink="all"
-        android:drawableLeft="@drawable/phone"
-        android:text="@string/link2"
         android:linksClickable="true"
+        android:padding="5dp"
         android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_above="@+id/txt3"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/txt3"
-        android:layout_width="wrap_content"
+        android:id="@+id/linkId"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/locationId"
+        android:layout_alignParentStart="true"
         android:layout_gravity="center"
         android:autoLink="web"
         android:background="@android:color/holo_orange_light"
+        android:drawableLeft="@drawable/web"
         android:fontFamily="monospace"
         android:gravity="center"
         android:padding="5dp"
-        android:drawableLeft="@drawable/web"
         android:text="@string/udacity_link"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@android:color/background_light"
         android:textColorLink="@android:color/white"
-        android:textSize="24sp"
-        android:layout_above="@+id/txt4"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:textSize="24sp" />
 
 
     <TextView
-        android:id="@+id/txt4"
+        android:id="@+id/locationId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView2"
+        android:layout_above="@+id/bottomText"
         android:layout_alignParentStart="true"
         android:layout_gravity="center"
+        android:autoLink="map"
         android:background="@android:color/holo_orange_light"
+        android:drawableLeft="@drawable/loc"
         android:fontFamily="monospace"
         android:gravity="center"
         android:padding="5dp"
-        android:drawableLeft="@drawable/loc"
-        android:text="@string/link4"
+        android:text="@string/street"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/bottomText"
         android:layout_width="385dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:background="@color/colorPrimary" />
-
-
+        android:text="@string/get_your_energy_now"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:textColor="?android:attr/colorControlNormal"
+        android:background="@color/primary" />
 
 </RelativeLayout>

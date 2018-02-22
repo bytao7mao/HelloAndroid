@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">HelloAndroid</string>
-    <string name="link1">Udacity</string>
-    <string name="link2">"650 – 555 – 5555"</string>
-    <string name="udacity_link"><a href="http://www.udacity.com" >www.udacity.com</a></string>
-    <string name="link4">2465 Latham St, Mountain View, CA 94043</string>
+    <string name="app_name">Hello from Pika !</string>
+    <string name="brand">Pokeshop</string>
+    <string name="phone">"+40 7693335665"</string>
+    <string name="udacity_link"><a href="http://www.pokeshop.com" >www.pokeshop.com</a></string>
+    <string name="street">1998 Bulba St, Pikachu View, CA 94043</string>
+    <string name="get_your_energy_now">Get your energy now !</string>
+
 </resources>
