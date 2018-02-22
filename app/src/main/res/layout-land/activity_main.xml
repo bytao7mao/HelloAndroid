@@ -53,6 +53,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
+        android:textColorLink="#ffffff"
         android:layout_above="@+id/phoneId"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
